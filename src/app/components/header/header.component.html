@@ -1,0 +1,15 @@
+<header>
+  <h1>{{ title }}</h1>
+
+  <!--Added Styling to buttons using @Input decorator-->
+  <!--Passing data to components-->
+  <!--!Use case - 1: [property] binding when you need to pass dynamic values or evaluate expressions-->
+  <!--!Use case - 2: 'property' when you pass STATIC, LITERAL STRINGS-->
+
+  <app-button 
+    color="green" 
+    text="Add"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+  
+</header>
