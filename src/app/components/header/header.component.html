@@ -7,8 +7,8 @@
   <!--!Use case - 2: 'property' when you pass STATIC, LITERAL STRINGS-->
 
   <app-button 
-    color="green" 
-    text="Add"
+    color="{{ showAddTask ? 'red' : 'green'}}" 
+    text="{{ showAddTask ? 'Close' : 'Add'}}"
     (btnClick)="toggleAddTask()"
   ></app-button>
   
