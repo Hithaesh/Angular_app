@@ -19,7 +19,7 @@ export class AddTaskComponent implements OnInit{
   constructor(private uiService: UiService) {
     this.subscription = this.uiService.onToggle().subscribe((value) => {
       this.showAddTask = value; // value = servicefile(showAddTask value opposite to it) // this.subject.next(this.showAddTask)
-    })
+    });
   }
 
   ngOnInit(): void {
@@ -28,7 +28,7 @@ export class AddTaskComponent implements OnInit{
 
   onSubmit(){
     if(!this.text){
-      alert("Please add a task");
+      alert("Please add a Task");
       return;
     }
 

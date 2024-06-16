@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor(private uiService: UiService) {
     this.subcription = this.uiService.onToggle().subscribe((value) => {
       this.showAddTask = value; // value = servicefile(showAddTask value opposite to it) // this.subject.next(this.showAddTask)
-    })
+    });
    }
 
   ngOnInit(): void {
