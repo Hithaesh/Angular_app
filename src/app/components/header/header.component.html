@@ -6,7 +6,8 @@
   <!--!Use case - 1: [property] binding when you need to pass dynamic values or evaluate expressions-->
   <!--!Use case - 2: 'property' when you pass STATIC, LITERAL STRINGS-->
 
-  <app-button 
+  <!--Todo: Based on the click Event on the Button, the color and text gets modified dynamically.-->
+  <app-button *ngIf="hasRoute('/')"
     color="{{ showAddTask ? 'red' : 'green'}}" 
     text="{{ showAddTask ? 'Close' : 'Add'}}"
     (btnClick)="toggleAddTask()"
