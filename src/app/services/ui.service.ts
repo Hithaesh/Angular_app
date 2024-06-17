@@ -11,7 +11,8 @@ export class UiService {
   constructor() { }
 
   toggleAddTask() : void {
-    this.showAddTask = ! this.showAddTask;
+    this.showAddTask = !this.showAddTask;
+    console.log(this.showAddTask);
     this.subject.next(this.showAddTask); // To feed a new value to the subject next(theValue)
   }
 
